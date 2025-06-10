@@ -8,5 +8,5 @@ rm -rvf *
 while true
 do
         echo "Loading..."
-        sleep 60
+        sleep 14400
 done
